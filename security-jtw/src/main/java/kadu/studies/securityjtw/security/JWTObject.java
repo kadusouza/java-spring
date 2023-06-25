@@ -1,4 +1,4 @@
-/*package kadu.studies.securityjtw.security;
+package kadu.studies.securityjtw.security;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -46,5 +46,3 @@ public class JWTObject {
         this.roles = Arrays.asList(roles);
     }
 }
-
- */

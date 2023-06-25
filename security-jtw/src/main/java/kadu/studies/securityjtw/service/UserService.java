@@ -14,12 +14,6 @@ public class UserService {
     private UserRepository repository;
     @Autowired
     private PasswordEncoder encoder;
-//    @Bean
-//    public BCryptPasswordEncoder encoder(){
-//        return new BCryptPasswordEncoder();
-//    }
-//    @Autowired
-//    BCryptPasswordEncoder encoder;
     public void createUser(User user){
         String pass = user.getPassword();
         //criptografando antes de salvar no banco

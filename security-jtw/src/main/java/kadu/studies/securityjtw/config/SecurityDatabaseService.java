@@ -1,4 +1,4 @@
-package kadu.studies.securityjtw.config;
+/*package kadu.studies.securityjtw.config;
 
 import kadu.studies.securityjtw.model.User;
 import kadu.studies.securityjtw.repository.UserRepository;
@@ -33,3 +33,5 @@ public class SecurityDatabaseService  implements UserDetailsService {
         return user;
     }
 }
+
+ */

@@ -1,4 +1,4 @@
-package kadu.studies.securityjtw.config;
+/*package kadu.studies.securityjtw.config;
 
 import kadu.studies.securityjtw.config.SecurityDatabaseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,3 +52,4 @@ public class WebSecurityConfig {
         return http.build();
     }
 }
+*/

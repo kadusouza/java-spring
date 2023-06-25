@@ -1,4 +1,3 @@
-/*
 package kadu.studies.securityjtw.security;
 
 import java.util.Arrays;
@@ -13,6 +12,10 @@ import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.SignatureException;
 import io.jsonwebtoken.UnsupportedJwtException;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+
+import javax.crypto.SecretKey;
 
 public class JWTCreator {
     public static final String HEADER_AUTHORIZATION = "Authorization";
@@ -27,7 +30,9 @@ public class JWTCreator {
             throws ExpiredJwtException, UnsupportedJwtException, MalformedJwtException, SignatureException {
         JWTObject object = new JWTObject();
         token = token.replace(prefix, "");
-        Claims claims = Jwts.parser().setSigningKey(key).parseClaimsJws(token).getBody();
+//        Claims claims = Jwts.parser().setSigningKey(key).parseClaimsJws(token).getBody();
+        SecretKey secret = Keys.hmacShaKeyFor(Decoders.BASE64.decode(key));
+        Claims claims = (Claims) Jwts.parserBuilder().setSigningKey(secret).build().parseClaimsJws(token).getBody();
         object.setSubject(claims.getSubject());
         object.setExpiration(claims.getExpiration());
         object.setIssuedAt(claims.getIssuedAt());
@@ -41,5 +46,3 @@ public class JWTCreator {
 
 
 }
-
- */

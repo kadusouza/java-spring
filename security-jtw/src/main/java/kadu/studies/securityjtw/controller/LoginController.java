@@ -1,4 +1,4 @@
-/*package kadu.studies.securityjtw.controller;
+package kadu.studies.securityjtw.controller;
 
 import kadu.studies.securityjtw.dtos.Login;
 import kadu.studies.securityjtw.dtos.Sessao;
@@ -46,4 +46,3 @@ public class LoginController {
     }
 }
 
- */

@@ -1,4 +1,4 @@
-/*package kadu.studies.securityjtw.security;
+package kadu.studies.securityjtw.security;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
@@ -21,4 +21,3 @@ public class SecurityConfig {
     }
 }
 
- */
