@@ -1,5 +1,5 @@
 # java-spring
-Various applications of the Spring framework
+Various applications of the Spring framework.
 Using:
 - Java Persistence API
 - Spring Security
